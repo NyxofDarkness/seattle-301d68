@@ -132,14 +132,15 @@ const objectLit = array => ({
 console.log(objectLit());
 
 
-let sumAndProduct = function (a, b) {
-  let sum = a + b;
-  let product = a * b;
-  return [sum, product];
-};
+// let sumAndProduct = function (a, b) {
+//   let sum = a + b;
+//   let product = a * b;
+//   return [sum, product];
+// };
+const sumAndProduct = (a, b) => [a + b, a * b];
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sumAndProduct(3, 9));
+console.log(sumAndProduct(3, 9));
 
 
 let message = function (name) {
@@ -167,7 +168,7 @@ let joe = new Student('Joe', 'Schmoe', 100);
 
 
 Student.prototype.greeting = function () {
-  return `Hi, my name is ${this.name}`;
+  return `Hi, my name is ${this.name} `;
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
