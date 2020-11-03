@@ -209,8 +209,8 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+//It comes as undefined, because arrow functions do not provide a this object outside of its function when using arrow functions. You can see Joe within the student prototype, but can't call it in a global sense.
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+//this points to the whole scope of the Student constructor. It has all the information for the window, including what has and can be done (even if we are not using it) Since we are looking at the student prototype, we can see all the info.
 // 3. Explain why "this" is different when an arrow function is used.
-//
+//regular functions return a reference to the current javascript object, but the arrow function returns the reference to the global window object. It reminds me of CSS, arrow functions seem to put things in boxes, but I could be thinking wrong. 
